@@ -40,49 +40,49 @@ function Coin() {
   useEffect(() => {
     fetchCoinData();
     fetchHistoricalData();
-  }, [currency]);
+  }, [currency, coinId]);
 
-  if (coinData, historicalData) {
-    return (
-      <div className="coin">
-        <div className="coinName">
-          <img src={coinData.image.large} alt="" />
-          <p><b>{coinData.name} ({coinData.symbol.toUpperCase()})</b></p>
-        </div>
-        <div className="coinChart">
-          <LineChart historicalData={historicalData} />
-        </div>
-        <div className="coinInfo">
-          <ul>
-            <li>Crypto Market Rank</li>
-            <li>{coinData.market_cap_rank}</li>
-          </ul>
-          <ul>
-            <li>Crypto Price</li>
-            <li>{currency.symbol} {coinData.market_data.current_price[currency.name].toLocaleString()}</li>
-          </ul>
-          <ul>
-            <li>Market Cap</li>
-            <li>{currency.symbol} {coinData.market_data.market_cap[currency.name].toLocaleString()}</li>
-          </ul>
-          <ul>
-            <li>24 Hour High</li>
-            <li>{currency.symbol} {coinData.market_data.high_24h[currency.name].toLocaleString()}</li>
-          </ul>
-          <ul>
-            <li>24 Hour Low</li>
-            <li>{currency.symbol} {coinData.market_data.low_24h[currency.name].toLocaleString()}</li>
-          </ul>
-        </div>
-      </div>
-    );
-  } else {
+  if (!coinData || !historicalData) {
     return (
       <div className="spinner">
         <div className="spin"></div>
       </div>
     );
   }
+
+  return (
+    <div className="coin">
+      <div className="coinName">
+        <img src={coinData.image.large} alt="" />
+        <p><b>{coinData.name} ({coinData.symbol.toUpperCase()})</b></p>
+      </div>
+      <div className="coinChart">
+        <LineChart historicalData={historicalData} />
+      </div>
+      <div className="coinInfo">
+        <ul>
+          <li>Crypto Market Rank</li>
+          <li>{coinData.market_cap_rank}</li>
+        </ul>
+        <ul>
+          <li>Crypto Price</li>
+          <li>{currency.symbol} {coinData.market_data.current_price[currency.name].toLocaleString()}</li>
+        </ul>
+        <ul>
+          <li>Market Cap</li>
+          <li>{currency.symbol} {coinData.market_data.market_cap[currency.name].toLocaleString()}</li>
+        </ul>
+        <ul>
+          <li>24 Hour High</li>
+          <li>{currency.symbol} {coinData.market_data.high_24h[currency.name].toLocaleString()}</li>
+        </ul>
+        <ul>
+          <li>24 Hour Low</li>
+          <li>{currency.symbol} {coinData.market_data.low_24h[currency.name].toLocaleString()}</li>
+        </ul>
+      </div>
+    </div>
+  );
 }
 
 export default Coin;

@@ -1,8 +1,16 @@
-# React + Vite
+# Crypto Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Crypto Tracker, kullanıcıların kripto para birimlerini takip etmelerini sağlayan bir web uygulamasıdır. Kullanıcılar farklı para birimlerini seçebilir, kripto para birimlerini arayabilir ve her bir kripto para birimi için ayrı bir pencere açabilirler.
 
-Currently, two official plugins are available:
+## Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Kripto para birimlerini arama
+- Farklı para birimlerini seçme (USD, EUR, CHF)
+- Her bir kripto para birimi için ayrı pencere açma
+
+## Kurulum
+
+1. Bu projeyi klonlayın:
+
+```bash
+git clone https://github.com/kullanici-adi/crypto-tracker.git

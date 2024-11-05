@@ -1,16 +1,16 @@
 # Crypto Tracker
 
-Crypto Tracker, kullanıcıların kripto para birimlerini takip etmelerini sağlayan bir web uygulamasıdır. Kullanıcılar farklı para birimlerini seçebilir, kripto para birimlerini arayabilir ve her bir kripto para birimi için ayrı bir pencere açabilirler.
+Crypto Tracker is a web application that allows users to track cryptocurrencies. Users can select different currencies, search for cryptocurrencies, and open a separate window for each cryptocurrency.
 
-## Özellikler
+## Features
 
-- Kripto para birimlerini arama
-- Farklı para birimlerini seçme (USD, EUR, CHF)
-- Her bir kripto para birimi için ayrı pencere açma
+- Search for cryptocurrencies
+- Select different currencies (USD, EUR, CHF)
+- Open a separate window for each cryptocurrency
 
-## Kurulum
+## Installation
 
-1. Bu projeyi klonlayın:
+1. Clone this project:
 
 ```bash
 git clone https://github.com/ilkckn/CryptoPlace.git

@@ -13,4 +13,4 @@ Crypto Tracker, kullanıcıların kripto para birimlerini takip etmelerini sağl
 1. Bu projeyi klonlayın:
 
 ```bash
-git clone https://github.com/kullanici-adi/crypto-tracker.git
+git clone https://github.com/ilkckn/CryptoPlace.git
